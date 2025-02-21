@@ -5,11 +5,15 @@ import { motion } from 'framer-motion';
 const LandingPage = () => {
   return (
     <div className="min-h-screen bg-[#FDF6ED] flex justify-center items-center relative overflow-hidden">
+      
+      {/* Background Image with Low Opacity */}
+      <div className="absolute inset-0 bg-[url('/choco_bg3.avif')] bg-cover bg-center "></div>
+
       {/* Hero Section */}
       <div className="relative max-w-7xl mx-0 px-6 py-20 w-full">
         
         {/* Floating Elements (Only visible on medium screens and up) */}
-        <motion.img
+        {/* <motion.img
           src="/bars.png"
           alt="Chocolate piece"
           className="absolute top-20 left-[-50px] w-40 md:w-64 hidden md:block"
@@ -52,14 +56,14 @@ const LandingPage = () => {
             repeat: Infinity,
             ease: "easeInOut"
           }}
-        />
+        /> */}
 
         {/* Main Content */}
         <div className="text-center max-w-3xl mx-auto relative z-10">
           <motion.h1 
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            className="text-4xl md:text-7xl font-serif text-[#553C2E] mb-6"
+            className="text-4xl md:text-7xl font-serif text-[#f0e3cb] mb-6"
           >
             Chocolates that  
             <br />  
@@ -70,7 +74,7 @@ const LandingPage = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.2 }}
-            className="text-[#553C2E] text-base md:text-lg mb-8"
+            className="text-[#ffffff] text-base md:text-lg mb-8"
           >
             Experience the perfect blend of tradition and innovation.  
             Our chocolates are handcrafted from the finest ingredients  
@@ -89,7 +93,7 @@ const LandingPage = () => {
             <motion.button
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              className="bg-transparent border-2 border-[#E8A27D] text-[#E8A27D] px-6 md:px-8 py-3 rounded-full"
+              className="bg-transparent border-2 border-[#cf9678] text-[#ffffff] px-6 md:px-8 py-3 rounded-full"
             >
               Learn More
             </motion.button>

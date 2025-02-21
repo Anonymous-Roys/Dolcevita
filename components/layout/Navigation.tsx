@@ -87,13 +87,16 @@ const NavigationBar = () => {
 
             {/* Right Side Icons */}
             <div className="flex items-center space-x-6">
-              <motion.button
-                whileHover={{ scale: 1.1 }}
-                whileTap={{ scale: 0.95 }}
-                className="text-[#553C2E]"
-              >
+              <motion.a 
+                      href="https://wa.me/+233249201201" // Replace YOUR_NUMBER_HERE with your actual WhatsApp number
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      whileHover={{ scale: 1.1 }}
+                      whileTap={{ scale: 0.95 }}
+                      className="flex items-center gap-3 bg-[#E8A27D] text-white px-8 py-3 rounded-full text-lg md:text-xl font-medium shadow-lg"
+                    >
                 <MessageCircle size={24} />
-              </motion.button>
+              </motion.a>
               
               {/* <motion.button
                 whileHover={{ scale: 1.1 }}

@@ -30,7 +30,7 @@ const ContactPage = () => {
 
       {/* WhatsApp Button */}
       <motion.a 
-        href="https://wa.me/YOUR_NUMBER_HERE" // Replace YOUR_NUMBER_HERE with your actual WhatsApp number
+        href="https://wa.me/+233249201201" // Replace YOUR_NUMBER_HERE with your actual WhatsApp number
         target="_blank"
         rel="noopener noreferrer"
         whileHover={{ scale: 1.1 }}

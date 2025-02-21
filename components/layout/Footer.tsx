@@ -44,7 +44,7 @@ const Footer = () => {
             <div>
               <h4 className="text-lg font-serif mb-6">Quick Links</h4>
               <ul className="space-y-3">
-                {['About Us', 'Our Products', 'Gift Cards', 'Store Locator'].map((link) => (
+                {['About Us', 'Our Products'].map((link) => (
                   <li key={link}>
                     <motion.a
                       href="#"
@@ -64,7 +64,7 @@ const Footer = () => {
               <ul className="space-y-4">
                 <li className="flex items-center gap-3">
                   <Phone className="w-5 h-5 text-[#E8A27D]" />
-                  <span className="text-white/80">+1 234 567 890</span>
+                  <span className="text-white/80">+233 24 920 1201</span>
                 </li>
                 <li className="flex items-center gap-3">
                   <Mail className="w-5 h-5 text-[#E8A27D]" />
@@ -72,7 +72,7 @@ const Footer = () => {
                 </li>
                 <li className="flex items-center gap-3">
                   <MapPin className="w-5 h-5 text-[#E8A27D]" />
-                  <span className="text-white/80">123 Chocolate Lane, Sweet City</span>
+                  <span className="text-white/80">Circle west ring road , Oksart place 6th floor</span>
                 </li>
               </ul>
             </div>
