@@ -30,7 +30,7 @@ const NavigationBar = () => {
     { name: 'Home', href: '/' },
     { name: 'Products', href: '/products' },
     { name: 'About', href: '/about' },
-    { name: 'Blog', href: '/blog' },
+    // { name: 'Blog', href: '/blog' },
     { name: 'Contact', href: '/contact' }
   ];
 
@@ -93,7 +93,7 @@ const NavigationBar = () => {
                       rel="noopener noreferrer"
                       whileHover={{ scale: 1.1 }}
                       whileTap={{ scale: 0.95 }}
-                      className="flex items-center gap-3 bg-[#E8A27D] text-white px-8 py-3 rounded-full text-lg md:text-xl font-medium shadow-lg"
+                      className="flex items-center gap-3 bg-[#553C2E] text-white px-8 py-3 rounded-full text-lg md:text-xl font-medium shadow-lg"
                     >
                 <MessageCircle size={24} />
               </motion.a>

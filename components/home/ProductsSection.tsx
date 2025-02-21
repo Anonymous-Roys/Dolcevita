@@ -58,7 +58,7 @@ const ProductsSection = () => {
                   </motion.div>
                 </div>
                 <h3 className="text-[#553C2E] font-medium">{product.name}</h3>
-                <p className="text-[#E8A27D]">€{product.price}</p>
+                <p className="text-[#E8A27D]">GHc {product.price}</p>
               </motion.div>
             ))}
           </div>

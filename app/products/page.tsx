@@ -29,7 +29,7 @@ const ProductsPage = () => {
       >
         <div className="absolute inset-0">
           <img
-            src="/api/placeholder/1920/800"
+            src="/choco_bg2.jpg"
             alt="Chocolate collection"
             className="w-full h-full object-cover"
           />
@@ -91,7 +91,7 @@ const ProductsPage = () => {
                 >
                   <div className="relative overflow-hidden group">
                     <img
-                      src="/api/placeholder/400/300"
+                      src="/flavors.jpeg"
                       alt="Chocolate product"
                       className="w-full h-64 object-cover"
                     />
@@ -114,7 +114,7 @@ const ProductsPage = () => {
                       Handcrafted with 72% cocoa
                     </p>
                     <div className="flex justify-between items-center">
-                      <span className="text-xl text-[#E8A27D]">€24.99</span>
+                      <span className="text-xl text-[#E8A27D]">24.99</span>
                       <motion.button
                         whileHover={{ scale: 1.1 }}
                         whileTap={{ scale: 0.9 }}

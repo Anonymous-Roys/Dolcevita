@@ -28,7 +28,7 @@ const BestSellers = () => {
       name: "Signature Gift Box",
       price: "GHc 49.99",
       rating: 5,
-      imageUrl: "/public/flavor1.jpeg",
+      imageUrl: "/flavor1.jpeg",
       sales: "3k+ sold"
     }
   ];
@@ -76,14 +76,20 @@ const BestSellers = () => {
                 </div>
                 <div className="flex justify-between items-center">
                   <span className="text-xl text-[#E8A27D]">{product.price}</span>
+                  <motion.a 
+                          href="https://wa.me/+233249201201" // Replace YOUR_NUMBER_HERE with your actual WhatsApp number
+                          target="_blank"
+                          rel="noopener noreferrer"
+                           >
                   <motion.button
                     whileHover={{ scale: 1.05 }}
                     whileTap={{ scale: 0.95 }}
                     className="bg-[#553C2E] text-white px-4 py-2 rounded-full flex items-center gap-2"
                   >
-                    Shop Now
+                    Order Now
                     <ArrowRight className="w-4 h-4" />
                   </motion.button>
+                  </motion.a>
                 </div>
               </div>
             </motion.div>
