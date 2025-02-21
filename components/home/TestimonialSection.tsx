@@ -56,7 +56,7 @@ const Testimonials = () => {
                     <Star key={i} className="inline-block w-5 h-5 fill-[#E8A27D] text-[#E8A27D]" />
                   ))}
                 </div>
-                <p className="text-[#553C2E] mb-6 italic">"{testimonial.quote}"</p>
+                <p className="text-[#553C2E] mb-6 italic">&quot;{testimonial.quote}&quot;</p>
                 <div>
                   <p className="font-serif text-lg text-[#553C2E]">{testimonial.name}</p>
                   <p className="text-[#553C2E]/70">{testimonial.role}</p>

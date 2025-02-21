@@ -4,7 +4,7 @@ export interface Product {
     name: string;
     price: number | string;
     description?: string;
-    imageUrl: string;
+    imageUrl?: string;
     category?: string;
     ingredients?: string[];
     weight?: string;

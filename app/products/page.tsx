@@ -1,17 +1,19 @@
+'use client'
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
+import { Product } from '@/lib/types';
 
 const ProductsPage = () => {
   const [selectedCategory, setSelectedCategory] = useState('all');
 
   const categories = ['all', 'truffles', 'bars', 'gift boxes', 'seasonal'];
 
-  const products = [
+  const products: Product[] = [
     {
       id: 1,
       name: "Dark Chocolate Truffle",
       category: "truffles",
-      price: "€3.99",
+      price: "GHc 3.99",
       description: "72% dark chocolate with a smooth ganache filling"
     },
     // Add more products as needed
@@ -75,10 +77,11 @@ const ProductsPage = () => {
             layout
             className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
           >
+
             <AnimatePresence>
-              {[1, 2, 3, 4, 5, 6].map((product) => (
+              {products.map((product) => (
                 <motion.div
-                  key={product}
+                  key={product.id}
                   layout
                   initial={{ opacity: 0, scale: 0.9 }}
                   animate={{ opacity: 1, scale: 1 }}
